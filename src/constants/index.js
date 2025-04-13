@@ -23,6 +23,13 @@ import {
   jobit,
   tripguide,
   threejs,
+  blockchain,
+  contriflow,
+  foodDil,
+  HumanVSAi,
+  scetTnp,
+  NGO,
+  trafficDen,
 } from "../assets";
 
 export const navLinks = [
@@ -46,7 +53,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Next.js Developer",
     icon: mobile,
   },
   {
@@ -54,20 +61,12 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Blockchain Application Developer",
+    icon: blockchain,
   },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -79,10 +78,6 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -97,20 +92,42 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
+
+];
+
+const MyTechnologies = [
   {
-    name: "figma",
-    icon: figma,
+    name: "Lunguages",
+    content:["HTML", "CSS", "JavaScript", "TypeScript","C","C++","JAVA","Python","PHP","Solidity"],
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Frameworks",
+    content: ["Hardhat", "Truffle", "MERN stack", "Next.js", "Bootstrap CSS", "Tailwind CSS", "Clerk" ,"Git & Github"],
+  },
+  {
+    name: "Databases",
+    content: ["SQl", "MongoDb", "NeonDb","Prisma"],
+  },
+  {
+    name: "Core Subjects",
+    content: ["Data Structure and Algoritham", "Database management System", "Object Oriented Programming",  "Opreating System", "Computer Networks", "Network Security", "Theory of compilation", "Blockchain Technology"],
+  },
+  {
+    name: "Non-Technical",
+    content: [
+      "Communication",
+      "Teamwork",
+      "Time Management",
+      "Problem Solving",
+      "Critical Thinking",
+      "Creativity",
+      "Conflict Resolution",
+      "Decision Making",
+      "Public Speaking",
+    ],
   },
 ];
 
@@ -197,69 +214,133 @@ const testimonials = [
 ];
 
 const projects = [
+
   {
-    name: "Car Rent",
+    name: "ContriFlow - reward services for contributers on GitHub",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "WCreated a decentralized reward service for repo owner to help to manage funding to contributors. This project based on Ethereum Blockchain. Clerk used as user session management and NeonDB, Prisma used as database. Next.js used as web development framework.",
     tags: [
       {
-        name: "react",
+        name: "Next",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Blockchain",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Prisma",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: contriflow,
+    source_code_link: "https://github.com/MannPatel1207/Git-Rewards",
   },
   {
-    name: "Job IT",
+    name: "Training and Placement Portal for SCET College",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      " We have created a TnP portel for our college which is currently in varification phase at college. It is Web app with advance placement data visualization n graph. According to Tnp department representative, It hepls them to provide information to student.",
     tags: [
       {
-        name: "react",
+        name: "MERN",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "MongoDB",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "RESTApi",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: scetTnp,
+    source_code_link: "https://github.com/MannPatel1207/ScetTnP_Backend",
   },
   {
-    name: "Trip Guide",
+    name: "Density Detection System",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "We have created a vehicle density detection web app which detect density of vehicle on any given road it helps us in the smart traffic signal project whih is currently in developing stage. Which include Image processing and YOLO v8 model which is fine Tuned according to uor dataset.",
     tags: [
       {
-        name: "nextjs",
+        name: "YOLOv8n",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "ImageProcessing",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Streamlit",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: trafficDen,
+    source_code_link: "https://github.com/MannPatel1207",
+  },
+  {
+    name: "NGO Funding PLatform",
+    description:
+      " We have create a plateform based on ethereum blockchain for NGO to get funding from user. It first need to uupload proof of spending then doner donte funfs. it helps NGO to get funds from donor and Donor also can track it's donation to NGO. It is based on Ethereum blockchain and Solidity for contract gereration , Hardhat for testing and Deployment of contract. It uses MERN stack for web app.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Blockchain",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Ethereum",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: NGO,
+    source_code_link: "https://github.com/MannPatel1207/NGOFundingPLateform",
+  },
+  {
+    name: "Gamified Food Delivery App",
+    description:
+      "In Hackthon at VCET, we crated food Deleviry appication with additional Gamified Elements i.e. leader board , reward mission , personal mission , gorup mission and bedge system. We Have used MERN stack to develope web app. which is hosted on render.com. for that we have won the net code award.",
+    tags: [
+      { 
+        name: "Reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "RESTApi",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: foodDil,
+    source_code_link: "https://github.com/MannPatel1207/Gamified-food-delivery-app---VCET-Hackthon",
+  },
+  {
+    name: "Human VS AI Gmaeplaying Playeform",
+    description:
+      "We have create a gameplaying platform for human vs AI.Mern stack is used for web app and python is used for AI model. ",
+    tags: [
+      {
+        name: "Django",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: HumanVSAi,
+    source_code_link: "https://github.com/MannPatel1207/HUMANVSAI",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, MyTechnologies };

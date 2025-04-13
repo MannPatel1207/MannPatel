@@ -47,11 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Passionate and detail-oriented fresher web developer skilled in the MERN stack (MongoDB, Express.js, React, Node.js) with expertise in database management using MongoDB, SQL, and NeonDB. Proficient in blockchain development, including smart contract creation with Solidity, leveraging Hardhat and Truffle frameworks. Strong foundation in core computer science fundamentals, such as data structures, algorithms, and system design. Demonstrated capability through impactful projects showcasing full-stack and blockchain development. Currently thriving as a group freelancer, serving as a Backend Developer and Team Lead, where I focus on building scalable server-side solutions, managing databases, and coordinating team efforts to deliver high-quality applications.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

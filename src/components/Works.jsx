@@ -7,6 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { a } from "maath/dist/objectSpread2-284232a6.esm";
 
 const ProjectCard = ({
   index,
@@ -90,7 +91,9 @@ const Works = () => {
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
+          <a href={project.source_code_link} target="_blank" rel="noopener noreferrer">
           <ProjectCard key={`project-${index}`} index={index} {...project} />
+          </a>
         ))}
       </div>
     </>

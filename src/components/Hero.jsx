@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { MannPhoto } from "../assets";
 
 const Hero = () => {
   return (
@@ -14,16 +15,26 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div>
+        <div className='flex justify-between h-full'>
+        <div className='items-center justify-between gap-4'>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+            Hi, I'm <span className='text-[#915EFF]'>Mann</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            Full Stack Web developer <br className='sm:block hidden' />
+            Blockchain Application Developer
           </p>
         </div>
+
+        {/* Profile Picture */}
+        <img
+          src={MannPhoto} // ← Replace with your image path
+          alt='Mann'
+          className='w-52 h-52 rounded-full object-cover border-4 border-[#915EFF] shadow-xl mt-5 ml-[177px]'
+        />
       </div>
+      </div>
+
 
       <ComputersCanvas />
 

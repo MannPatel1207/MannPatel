@@ -29,8 +29,24 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import blockchain from "./blockchain.png";
+
+import contriflow from "./contriflow.png";
+import foodDil from "./foodDil.png";
+import HumanVSAi from "./HumanVSAi.png";
+import scetTnp from "./scetTnp.png";
+import NGO from "./NGO.png";
+import MannPhoto from "./MannPhoto.jpg";
+import trafficDen from "./trafficDen.jpg";
 
 export {
+  trafficDen,
+  MannPhoto,
+  NGO,
+  contriflow,
+  foodDil,
+  HumanVSAi,
+  scetTnp,
   logo,
   backend,
   creator,
@@ -59,4 +75,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  blockchain
 };
